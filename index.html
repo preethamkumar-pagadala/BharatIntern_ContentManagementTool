@@ -1,1 +1,45 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Management Tool</title>
+    <link rel="stylesheet" href="stylesss.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Content Management Tool</h1>
+            <h2>Welcome</h2>
+        </header>
+        <main>
+            <form id="content-form">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Enter Title" required>
+                </div>
+                <div class="form-group">
+                    <label for="text">Text</label>
+                    <textarea id="text" name="text" placeholder="Enter Text" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                    <input type="text" id="image-url" name="image-url" placeholder="Image URL">
+                </div>
+                <div class="form-group">
+                    <label for="video">Video</label>
+                    <input type="file" id="video" name="video" accept="video/*">
+                    <input type="text" id="video-url" name="video-url" placeholder="Video URL">
+                </div>
+                <button type="submit" class="btn">Create Post</button>
+            </form>
+            <section id="preview-section">
+                <h2>Preview</h2>
+                <div id="blog-preview"></div>
+            </section>
+        </main>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
